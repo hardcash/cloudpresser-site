@@ -7,11 +7,15 @@
 /* Header */
 
 	#header {
+		z-index: 1;
+		position: relative;
 		@include padding(5em, 5em, (0, 0, -2em, 0));
 		text-align: center;
 
 		h1 {
+			@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 			margin: 0 0 (_size(element-margin) * 0.125) 0;
+			font-family: 'Lobster';
 		}
 
 		p {
