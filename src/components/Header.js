@@ -9,14 +9,20 @@ const Header = (props) => (
             <Anime
             key={12+Date.now()}
             delay={2500}
-            duration={2000}
+            duration={4000}
             loop={false}
             easing="easeOutSine"
-            top="10"
-            left="0%"
-            right="40%"
+            top="0"
+            right="100%"
             ><h1><TextyAnim>{'CloudPresser.com'}</TextyAnim></h1></Anime>
-        <p style={{display:'none'}}>Get your Applications to production in record time.</p>
+        <Anime
+            key={13+Date.now()}
+            delay={4000}
+            duration={4000}
+            loop={false}
+            easing="easeOutSine"
+            opacity="1"
+            ><div className="cta" style={{opacity:0}}><div><h2>Get it done without losing your hair</h2><p>Stress-free App and Web Development to get you in front of users in record time</p></div><div className="contact-form">Form will go here</div></div></Anime>
     </header>
 )
 
