@@ -38,11 +38,11 @@
 				font-size: 4.5vw;
 			}
 
-			> * {
-				@include vendor('transition', 'opacity 3s ease');
-				@include vendor('transition-delay', '0.5s');
-				opacity: 1;
-			}
+			// > * {
+			// 	@include vendor('transition', 'opacity 5s ease');
+			// 	@include vendor('transition-delay', '.5s');
+			// 	opacity: 1;
+			// }
 
 			.logo {
 				@include vendor('transition', (

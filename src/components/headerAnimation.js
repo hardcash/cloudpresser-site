@@ -13,7 +13,7 @@ class HeaderAnimation extends React.Component{
                 <svg className="header-animation" viewBox="0 0 640 640">
                     <Anime
                       key={11+Date.now()}
-                      delay={1000}
+                      delay={2500}
                       duration={2000}
                       loop={false}
                       easing="easeOutSine"
@@ -24,7 +24,7 @@ class HeaderAnimation extends React.Component{
                             <stop stopColor= "#438ae7" stopOpacity= "1" offset="0%" />
                             <Anime
                             key={12+Date.now()}
-                            delay={1000}
+                            delay={2500}
                             duration={2000}
                             loop={false}
                             easing="easeOutSine"
