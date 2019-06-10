@@ -21,14 +21,20 @@
 			right: 0;
 			top: 13vw;
 		}
-
-		p {
-			font-size: 1.25em;
+		h2 {
+			font-weight: 900;
+			font-size: 1.5em;
+		}
+		.cta {
+			font-size: 1.2em;
 			letter-spacing: _font(letter-spacing);
 			position: absolute;
 			left: 0;
-			right: 0;
-			top:20vw;
+			top:12vw;
+			display:flex;
+		}
+		.contact-form{
+			float: right;
 		}
 
 		&.alt {
@@ -71,6 +77,12 @@
 
 		@include breakpoint(medium) {
 			@include padding(4em, 3em, (0, 0, -2em, 0));
+			h2{
+				margin:0;
+			}
+			.contact-form{
+				display: none;
+			}
 
 			&.alt {
 				@include padding(4em, 3em, (1em, 0, 0, 0));
@@ -79,7 +91,10 @@
 
 		@include breakpoint(small) {
 			@include padding(3em, 2em, (0, 0, -1em, 0));
-
+			.cta > h2{
+				font-size: 1.2em;
+				margin: 0;
+			}
 			p {
 				font-size: 1em;
 				letter-spacing: 0;
@@ -94,6 +109,7 @@
 
 				h1 {
 					font-size: 2.5em;
+					top: 20vw;
 				}
 			}
 		}
