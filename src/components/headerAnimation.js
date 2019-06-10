@@ -13,7 +13,7 @@ class HeaderAnimation extends React.Component{
                 <svg className="header-animation" viewBox="0 0 640 640">
                     <Anime
                       key={11+Date.now()}
-                      delay={3000}
+                      delay={1000}
                       duration={2000}
                       loop={false}
                       easing="easeOutSine"
@@ -21,8 +21,16 @@ class HeaderAnimation extends React.Component{
                     >   
                 <radialGradient xmlns="http://www.w3.org/2000/svg" id="gradientb8NVkaJlj" gradientUnits="userSpaceOnUse"
                             cx="276.08" cy="-77.47" dx="288.67" dy="558.82" r="636.42">
-                            <stop stopColor= "#228ee6" stopOpacity= "1" offset="0%" />
-                            <stop className="background-gradient" stop-color="#cb42f4" stopOpacity="1" offset="100%" />
+                            <stop stopColor= "#438ae7" stopOpacity= "1" offset="0%" />
+                            <Anime
+                            key={12+Date.now()}
+                            delay={1000}
+                            duration={2000}
+                            loop={false}
+                            easing="easeOutSine"
+                            stopOpacity=".8">
+                            <stop className="background-gradient" stop-color="#a89cc8" stopOpacity="1" offset="100%" />
+                            </Anime>
                         </radialGradient>   
                 <path style={{fill:'url(#gradientb8NVkaJlj)'}} d={svgPath}  />
                 </Anime></svg>
